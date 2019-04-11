@@ -13,7 +13,6 @@ resp.raise_for_status()
 
 soup = bs4.BeautifulSoup(resp.text, "html.parser")
 #share_num = soup.find_all(id="u_0_3")
-#share_num = soup.find_all("a")
 
 print(soup.get_text())
 #for link in share_num:
